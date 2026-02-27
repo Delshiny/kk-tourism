@@ -1,0 +1,309 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>home</title>
+    <link rel="stylesheet" href="/Css/index.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <h2>KK Tourism</h2>
+      </div>
+      <div class="listitems">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#places">Places</a></li>
+          <li><a href="#things">Things To Do</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="carousel" id="home">
+      <div class="slides">
+        <img
+          src="../images/carousel-1.jpg"
+          alt="carousel-1"
+          class="slide"
+          width="1500"
+          height="500"
+        />
+        <img
+          src="../images/carousel-3.jpg"
+          alt="carousel-3"
+          class="slide"
+          width="1500"
+          height="500"
+        />
+        <img
+          src="../images/carousel-2.jpg"
+          alt="carousel-2"
+          class="slide"
+          width="1500"
+          height="500"
+        />
+        <img
+          src="../images/carousel-4.jpg"
+          alt="carousel-4"
+          class="slide"
+          width="1500"
+          height="500"
+        />
+      </div>
+      <div>
+        <div class="carousel-text">
+          <h1>Welcome to KannyaKumari</h1>
+          <p>The land where three seas meet</p>
+        </div>
+      </div>
+    </div>
+    <section class="about" id="about">
+      <h1>About Kanyakumari</h1>
+
+      <div class="about-container">
+        <div class="about-card">
+          <h3>Where Three Seas Meet</h3>
+          <p>
+            Kanyakumari is the southernmost tip of India where the Arabian Sea,
+            the Bay of Bengal, and the Indian Ocean meet. It is famous for its
+            breathtaking sunrise and sunset views.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Cultural Landmarks</h3>
+          <p>
+            The town is known for the <b>Vivekananda Rock Memorial</b>,
+            <b>Thiruvalluvar Statue</b>, and the historic
+            <b>Kumari Amman Temple</b>.
+          </p>
+        </div>
+
+        <div class="about-card">
+          <h3>Nature & Beaches</h3>
+          <p>
+            A paradise for nature lovers with cool sea breeze, colorful sands,
+            and scenic beaches perfect for relaxation.
+          </p>
+        </div>
+        <div class="about-card center-card">
+          <h3>KK Tourism</h3>
+          <p>
+            Our website helps travelers discover the best places, activities,
+            and experiences in Kanyakumari for a memorable journey.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="places" id="places">
+      <h1 class="section-title">Top Attractions in Kanyakumari</h1>
+
+      <div class="places-container">
+        <div class="place-card">
+          <img
+            src="../images/kanyakumari-sunrise.jpg"
+            alt="Kanyakumari Sunrise"
+          />
+          <div class="place-content">
+            <h3>Kanyakumari Sunrise</h3>
+            <p>Experience the magical sunrise where three seas meet.</p>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Kanyakumari Sunrise',
+                  'Watching the sunrise where three seas meet is a magical and unforgettable experience.',
+                )
+              "
+              >Explore</a
+            >
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/thiruvalluvar.jpg" alt="Thiruvalluvar Statue" />
+          <div class="place-content">
+            <h3>Thiruvalluvar Statue</h3>
+            <p>133-feet tall statue symbolizing Tamil culture.</p>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Thiruvalluvar Statue',
+                  'The 133-feet tall statue of the Tamil poet Thiruvalluvar stands on a rock surrounded by the sea.',
+                )
+              "
+              >Explore</a
+            >
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/vivenkanda.jpg" alt="Vivekananda Rock" />
+          <div class="place-content">
+            <h3>Vivekananda Rock</h3>
+            <p>Historic rock memorial surrounded by the ocean.</p>
+            <a href="#" class="btn" onclick="openModal('Vivekananda Rock', 'A sacred rock where Swami Vivekananda meditated, known for its spiritual vibe and breathtaking sea views.')">Explore</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/thirparrapu.jpg" alt="Thirparappu Falls" />
+          <div class="place-content">
+            <h3>Thirparappu Falls</h3>
+            <p>Beautiful waterfalls perfect for relaxation.</p>
+            <a href="#" class="btn" onclick="openModal('Thirparappu Falls', 'Thirparappu Falls is a picturesque waterfall flowing over rocky steps, surrounded by greenery and a nearby temple, making it a popular picnic and family spot.')">Explore</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/vattakottai.jpg" alt="Vattakottai Fort" />
+          <div class="place-content">
+            <h3>Vattakottai Fort</h3>
+            <p>Sea-facing historic fort with scenic views.</p>
+            <a href="#" class="btn" onclick="openModal('Vattakottai Fort', 'Vattakottai is a coastal fort built during the Travancore kingdom, offering spectacular views of the sea on one side and the Western Ghats on the other.')">Explore</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/muttom.jpg" alt="Muttom Beach" />
+          <div class="place-content">
+            <h3>Muttom Beach</h3>
+            <p>Rocky beach with lighthouse and sunset views.</p>
+            <a href="#" class="btn" onclick="openModal('Muttom Beach','Muttom Beach is a beautiful rocky beach famous for its lighthouse, dramatic cliffs, and mesmerizing sunset views, making it perfect for photography and relaxation.')">Explore</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/chitharal.jpg" alt="Chitharal Malaikovil" />
+          <div class="place-content">
+            <h3>Chitharal Malaikovil</h3>
+            <p>Hilltop Jain monuments with breathtaking scenery.</p>
+            <a href="#" class="btn" onclick="openModal('Chitharal Malaikovil','Chitharal Malaikovil is a historic hilltop temple known for its ancient Jain rock-cut sculptures, peaceful surroundings, and stunning views of the countryside.')">Explore</a>
+          </div>
+        </div>
+
+        <div class="place-card">
+          <img src="../images/Mathur Aqueduct.jpg" alt="Mathur Aqueduct" />
+          <div class="place-content">
+            <h3>Mathur Aqueduct</h3>
+            <p>Longest aqueduct in Asia with stunning valley view.</p>
+            <a href="#" class="btn" onclick="openModal('Mathur Aqueduct','Mathur Aqueduct is the longest and highest aqueduct in Asia, built across a scenic valley. The hanging bridge walkway gives breathtaking panoramic views of the hills and river below.')">Explore</a>
+          </div>
+        </div>
+        <div class="place-card">
+          <img src="../images/aruvikarai.jpg" alt="Aruvikarai" />
+          <div class="place-content">
+            <h3>Aruvikarai</h3>
+            <p>Longest waterfalls with beautiful nature</p>
+            <a href="#" class="btn" onclick="openModal('Aruvikarai','Aruvikarai is a serene natural waterfall surrounded by lush greenery, offering a peaceful environment and a refreshing escape for nature lovers.')">Explore</a>
+          </div>
+        </div>
+      </div>
+      <div id="placeModal" class="modal">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+
+          <h2 id="modal-title"></h2>
+          <p id="modal-desc"></p>
+        </div>
+      </div>
+    </section>
+
+    <section class="things" id="things">
+      <h1>Things to Do in Kanyakumari</h1>
+
+      <div class="things-container">
+        <div class="thing-card">
+          <h3>🌅 Sunrise & Sunset</h3>
+          <p>
+            Experience the magical sunrise and sunset where the three seas meet.
+          </p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🚤 Ferry Ride</h3>
+          <p>Take a boat ride to Vivekananda Rock Memorial.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🗿 Thiruvalluvar Statue</h3>
+          <p>Admire the 133-ft statue of the great Tamil poet.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🛕 Kumari Amman Temple</h3>
+          <p>Visit the famous seaside temple and feel the spiritual vibe.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🏖️ Beach Walk</h3>
+          <p>Relax with the cool sea breeze and scenic ocean view.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🏰 Vattakottai Fort</h3>
+          <p>Enjoy the historic fort with a stunning sea backdrop.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🌊 Thirparappu Falls</h3>
+          <p>A refreshing waterfall surrounded by greenery.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🌉 Mathur Aqueduct</h3>
+          <p>Walk on the longest aqueduct and enjoy the valley view.</p>
+        </div>
+
+        <div class="thing-card">
+          <h3>🛍️ Local Shopping</h3>
+          <p>Buy seashell crafts and traditional souvenirs.</p>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <h1>Contact KK Tourism</h1>
+
+      <div class="contact-card">
+        <h2>Plan Your Trip With Us</h2>
+        <p>
+          We are happy to guide you to explore the beauty of Kanyakumari. Reach
+          us for travel help, place details and suggestions.
+        </p>
+
+        <div class="contact-details">
+          <p>Kanyakumari, Tamil Nadu, India</p>
+          <p>+91 98765 43210</p>
+          <p>kktourism@gmail.com</p>
+          <p>9:00 AM – 6:00 PM</p>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script>
+    function openModal(title, desc) {
+      document.getElementById("placeModal").style.display = "block";
+
+      document.getElementById("modal-title").innerText = title;
+      document.getElementById("modal-desc").innerText = desc;
+    }
+
+   
+    document.querySelector(".close").onclick = function () {
+      document.getElementById("placeModal").style.display = "none";
+    };
+
+ 
+    window.onclick = function (e) {
+      const modal = document.getElementById("placeModal");
+      if (e.target == modal) {
+        modal.style.display = "none";
+      }
+    };
+  </script>
+</html>
