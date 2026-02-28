@@ -366,3 +366,52 @@ html {
   from {transform: scale(0.7);}
   to {transform: scale(1);}
 }
+
+
+@media (max-width: 768px) {
+
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+
+  .places-container {
+    grid-template-columns: 1fr;
+  }
+
+  .things-container {
+    grid-template-columns: 1fr;
+  }
+
+  .listitems ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .listitems a {
+    padding: 10px 20px;
+  }
+
+  .carousel {
+    height: 60vh;
+  }
+
+  .carousel-text h1 {
+    font-size: 26px;
+  }
+
+  .carousel-text p {
+    font-size: 14px;
+  }
+
+  .about h1,
+  .places h1,
+  .things h1,
+  .contact h1 {
+    font-size: 28px;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+}
