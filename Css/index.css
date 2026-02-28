@@ -5,6 +5,12 @@ html {
     display: flex;
     justify-content: space-between;
 }
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #008c9e;
+}
 .logo{
     padding: 10px;
     color: rgb(9, 144, 154);
@@ -369,6 +375,40 @@ html {
 
 
 @media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+
+  .logo {
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+  }
+
+  .listitems {
+    display: none;
+    width: 100%;
+  }
+
+  .listitems ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+  }
+
+  .listitems.active {
+    display: block;
+  }
 
   .about-container {
     grid-template-columns: 1fr;
