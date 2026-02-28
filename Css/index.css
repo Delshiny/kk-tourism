@@ -417,7 +417,8 @@ html {
 
   /* carousel */
   .carousel{
-    height: 70vh;
+    height: 60vh;
+    width: 450px ;
     
   }
 
