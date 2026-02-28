@@ -147,7 +147,17 @@
           <div class="place-content">
             <h3>Vivekananda Rock</h3>
             <p>Historic rock memorial surrounded by the ocean.</p>
-            <a href="#" class="btn" onclick="openModal('Vivekananda Rock', 'A sacred rock where Swami Vivekananda meditated, known for its spiritual vibe and breathtaking sea views.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Vivekananda Rock',
+                  'A sacred rock where Swami Vivekananda meditated, known for its spiritual vibe and breathtaking sea views.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
 
@@ -156,7 +166,17 @@
           <div class="place-content">
             <h3>Thirparappu Falls</h3>
             <p>Beautiful waterfalls perfect for relaxation.</p>
-            <a href="#" class="btn" onclick="openModal('Thirparappu Falls', 'Thirparappu Falls is a picturesque waterfall flowing over rocky steps, surrounded by greenery and a nearby temple, making it a popular picnic and family spot.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Thirparappu Falls',
+                  'Thirparappu Falls is a picturesque waterfall flowing over rocky steps, surrounded by greenery and a nearby temple, making it a popular picnic and family spot.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
 
@@ -165,7 +185,17 @@
           <div class="place-content">
             <h3>Vattakottai Fort</h3>
             <p>Sea-facing historic fort with scenic views.</p>
-            <a href="#" class="btn" onclick="openModal('Vattakottai Fort', 'Vattakottai is a coastal fort built during the Travancore kingdom, offering spectacular views of the sea on one side and the Western Ghats on the other.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Vattakottai Fort',
+                  'Vattakottai is a coastal fort built during the Travancore kingdom, offering spectacular views of the sea on one side and the Western Ghats on the other.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
 
@@ -174,7 +204,17 @@
           <div class="place-content">
             <h3>Muttom Beach</h3>
             <p>Rocky beach with lighthouse and sunset views.</p>
-            <a href="#" class="btn" onclick="openModal('Muttom Beach','Muttom Beach is a beautiful rocky beach famous for its lighthouse, dramatic cliffs, and mesmerizing sunset views, making it perfect for photography and relaxation.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Muttom Beach',
+                  'Muttom Beach is a beautiful rocky beach famous for its lighthouse, dramatic cliffs, and mesmerizing sunset views, making it perfect for photography and relaxation.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
 
@@ -183,7 +223,17 @@
           <div class="place-content">
             <h3>Chitharal Malaikovil</h3>
             <p>Hilltop Jain monuments with breathtaking scenery.</p>
-            <a href="#" class="btn" onclick="openModal('Chitharal Malaikovil','Chitharal Malaikovil is a historic hilltop temple known for its ancient Jain rock-cut sculptures, peaceful surroundings, and stunning views of the countryside.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Chitharal Malaikovil',
+                  'Chitharal Malaikovil is a historic hilltop temple known for its ancient Jain rock-cut sculptures, peaceful surroundings, and stunning views of the countryside.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
 
@@ -192,7 +242,17 @@
           <div class="place-content">
             <h3>Mathur Aqueduct</h3>
             <p>Longest aqueduct in Asia with stunning valley view.</p>
-            <a href="#" class="btn" onclick="openModal('Mathur Aqueduct','Mathur Aqueduct is the longest and highest aqueduct in Asia, built across a scenic valley. The hanging bridge walkway gives breathtaking panoramic views of the hills and river below.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Mathur Aqueduct',
+                  'Mathur Aqueduct is the longest and highest aqueduct in Asia, built across a scenic valley. The hanging bridge walkway gives breathtaking panoramic views of the hills and river below.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
         <div class="place-card">
@@ -200,7 +260,17 @@
           <div class="place-content">
             <h3>Aruvikarai</h3>
             <p>Longest waterfalls with beautiful nature</p>
-            <a href="#" class="btn" onclick="openModal('Aruvikarai','Aruvikarai is a serene natural waterfall surrounded by lush greenery, offering a peaceful environment and a refreshing escape for nature lovers.')">Explore</a>
+            <a
+              href="#"
+              class="btn"
+              onclick="
+                openModal(
+                  'Aruvikarai',
+                  'Aruvikarai is a serene natural waterfall surrounded by lush greenery, offering a peaceful environment and a refreshing escape for nature lovers.',
+                )
+              "
+              >Explore</a
+            >
           </div>
         </div>
       </div>
@@ -282,6 +352,9 @@
           <p>kktourism@gmail.com</p>
           <p>9:00 AM – 6:00 PM</p>
         </div>
+        <div class="footer-bottom">
+          <p>© 2026 KK Tourism | visit KannyaKumari</p>
+        </div>
       </div>
     </section>
   </body>
@@ -293,12 +366,10 @@
       document.getElementById("modal-desc").innerText = desc;
     }
 
-   
     document.querySelector(".close").onclick = function () {
       document.getElementById("placeModal").style.display = "none";
     };
 
- 
     window.onclick = function (e) {
       const modal = document.getElementById("placeModal");
       if (e.target == modal) {

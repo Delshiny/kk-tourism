@@ -354,6 +354,13 @@ html {
   cursor: pointer;
 }
 
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding: 15px 0;
+  background: #008c9e;
+  font-size: 14px;
+}
 
 @keyframes zoomIn {
   from {transform: scale(0.7);}
