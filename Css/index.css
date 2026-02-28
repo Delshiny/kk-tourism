@@ -1,6 +1,7 @@
 html {
   scroll-behavior:smooth;
 }
+ /* <---------navbar---------> */
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -83,6 +84,9 @@ html {
   text-align: center;
   color: rgb(209, 244, 244);
 }
+
+/* <---------about---------> */
+
 .about,.places {
   padding: 80px 10%;
   text-align: center;
@@ -144,7 +148,7 @@ html {
 }
 
 
-
+/* <---------places---------> */
 
 .places {
   padding: 80px 10%;
@@ -212,8 +216,6 @@ html {
   margin-bottom: 15px;
 }
 
-
-
 .btn {
   text-decoration: none;
   background: #0097a7;
@@ -228,11 +230,7 @@ html {
   background: #006d77;
 }
 
-
-
-
-
-
+/* <---------Things---------> */
 
 .things {
   padding: 60px 10%;
@@ -281,6 +279,7 @@ html {
   color: #fff;
 }
 
+/* <---------Contact---------> */
 .contact {
   padding: 80px 10%;
   background: #f4fefe;
@@ -374,84 +373,344 @@ html {
 }
 
 
+/*  Mobile */
 @media (max-width: 768px) {
-
-  .navbar {
+  /* <-------navbar-----> */
+  .navbar{
     flex-direction: column;
     align-items: center;
-    position: relative;
   }
 
-  .logo {
+  .logo{
     text-align: center;
     width: 100%;
   }
 
-  .menu-toggle {
+  .menu-toggle{
     display: block;
     position: absolute;
-    left: 20px;
+    right: 20px;
     top: 15px;
   }
 
-  .listitems {
-    display: none;
+  .listitems{
     width: 100%;
+    display: none;
+    text-align: center;
   }
 
-  .listitems ul {
+  .listitems ul{
     flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    padding: 20px 0;
+    gap: 20px;
+    padding: 0;
   }
 
-  .listitems.active {
+  .listitems.active{
     display: block;
   }
 
-  .about-container {
-    grid-template-columns: 1fr;
+  .listitems a{
+    display: block;
+    margin: 10px auto;
+    width: 80%;
   }
 
-  .places-container {
-    grid-template-columns: 1fr;
-  }
-
-  .things-container {
-    grid-template-columns: 1fr;
-  }
-
-  .listitems ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
-
-  .listitems a {
-    padding: 10px 20px;
-  }
-
-  .carousel {
+  /* carousel */
+  .carousel{
     height: 60vh;
   }
 
-  .carousel-text h1 {
-    font-size: 26px;
+  .carousel-text h1{
+    font-size: 22px;
   }
 
-  .carousel-text p {
+  .carousel-text p{
+    font-size: 14px;
+  }
+  /* <----about-----> */
+  .about{
+    padding: 60px 5%;
+  }
+
+  .about h1{
+    font-size: 28px;
+    margin-bottom: 35px;
+  }
+
+  .about-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .about-card{
+    padding: 20px;
+  }
+
+  .center-card{
+    grid-column: auto;
+    max-width: 100%;
+  }
+
+  /* <-------places----> */
+  
+  .places{
+    padding: 60px 5%;
+  }
+
+  .section-title{
+    font-size: 26px;
+    margin-bottom: 35px;
+  }
+
+  .places-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .place-card img{
+    height: 200px;
+  }
+
+  .place-content{
+    padding: 15px;
+  }
+
+  .place-content h3{
+    font-size: 18px;
+  }
+
+  .place-content p{
+    font-size: 13px;
+  }
+
+  .btn{
+    padding: 7px 16px;
     font-size: 14px;
   }
 
-  .about h1,
-  .places h1,
-  .things h1,
-  .contact h1 {
-    font-size: 28px;
+
+  /* <-------things-------> */
+  .things{
+    padding: 50px 5%;
   }
 
-  .contact-card {
+  .things h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .things-container{
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .thing-card{
+    padding: 20px;
+  }
+
+  .thing-card h3{
+    font-size: 18px;
+  }
+
+  .thing-card p{
+    font-size: 14px;
+  }
+
+    .contact{
+    padding: 60px 5%;
+  }
+
+  .contact h1{
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .contact-card{
+    padding: 25px 20px;
+  }
+
+  .contact-card h2{
+    font-size: 20px;
+  }
+
+  .contact-card p{
+    font-size: 14px;
+  }
+
+  .contact-details{
+    text-align: center;
+  }
+
+  .contact-details p{
+    font-size: 14px;
+  }
+
+  .footer-bottom{
+    font-size: 12px;
+    padding: 12px 5px;
+  }
+
+  /* modal */
+  .modal-content{
+    width: 90%;
+    margin: 30% auto;
+    padding: 20px;
+  }
+
+  .close{
+    font-size: 24px;
+  }
+
+}
+
+
+
+
+
+/* Tablet */
+@media (min-width: 769px) and (max-width: 1024px) {
+/* <-------navbar-----> */
+  .navbar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo{
+    text-align: center;
+    width: 100%;
+  }
+
+  .menu-toggle{
+    display: block;
+    position: absolute;
+    right: 30px;
+    top: 18px;
+  }
+
+  .listitems{
+    width: 100%;
+    display: none;
+    text-align: center;
+  }
+
+  .listitems ul{
+    flex-direction: column;
+    gap: 25px;
+    padding: 0;
+  }
+
+  .listitems.active{
+    display: block;
+  }
+
+  .listitems a{
+    display: block;
+    margin: 10px auto;
+    width: 60%;
+  }
+
+  /* carousel */
+  .carousel{
+    height: 70vh;
+  }
+
+  .carousel-text h1{
+    font-size: 32px;
+  }
+
+  .carousel-text p{
+    font-size: 18px;
+  }
+
+   /* <----about-----> */
+
+   .about{
+    padding: 70px 7%;
+  }
+
+  .about h1{
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+
+  .about-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .center-card{
+    grid-column: 1 / -1;
+    max-width: 500px;
+  }
+  /* <-------places----> */
+  .places{
+    padding: 70px 7%;
+  }
+
+  .section-title{
+    font-size: 30px;
+  }
+
+  .places-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+  }
+
+  .place-card img{
+    height: 210px;
+  }
+
+
+  /* <------things------> */
+  .things{
+    padding: 60px 7%;
+  }
+
+  .things h1{
+    font-size: 34px;
+  }
+
+  .things-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+  }
+   .contact{
+    padding: 70px 7%;
+  }
+
+  .contact h1{
+    font-size: 34px;
+  }
+
+  .contact-card{
+    padding: 35px;
+  }
+
+  .contact-card h2{
+    font-size: 24px;
+  }
+
+  .contact-card p{
+    font-size: 15px;
+  }
+
+  .contact-details p{
+    font-size: 15px;
+  }
+
+  .footer-bottom{
+    font-size: 13px;
+  }
+
+  /* modal */
+  .modal-content{
+    width: 85%;
+    margin: 20% auto;
     padding: 25px;
   }
 }
+
+
+
+
+
